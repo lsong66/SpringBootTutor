@@ -26,4 +26,18 @@ public class CourseService {
         return courseRepository.findCourseByName(input);
     }
 
+    public List<Course> addCourseName(String input){
+
+        return courseRepository.addCourseName(input);
+    }
+
+    public List<Course> deleteCourseName(String input){
+
+        return courseRepository.deleteCourseName(input);
+    }
+
+    public List<Course> updateCourseName(String input, String name){
+
+        return courseRepository.updateCourseName(input, name);
+    }
 }
